@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu:400,700");
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,700");
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Ubuntu', sans-serif;
+  background: url(https://raw.githubusercontent.com/supahfunk/supah-codepen/master/floor-is-lava.png?v=2) no-repeat center/cover;
+  background-color: #ECEFF1;
+  background-color: #252a33;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+}
+
+canvas:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.container {
+  display: block;
+  width: 50%;
+  background-color: #27aa99;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  padding: 0;
+  border-radius: 10px;
+}
+
+.container .title {
+  margin: 0;
+  padding: 0;
+  background-color: #3ae89c;
+  color: #ECEFF1;
+  border-radius: 10px 10px 0 0;
+  padding: 30px 40px 30px 40px;
+}
+
+.container .title h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 30px;
+}
+
+.container .title #t_first {
+  font-weight: 700;
+}
+
+.container .title #t_second {
+  float: right;
+  cursor: pointer;
+}
+
+.container .content {
+  color: #27aa99;
+  padding: 10px 0 20px 40px;
+}
+
+.container .content #txt_FS {
+  margin-top: 2px;
+  font-family: 'Quicksand';
+  border: none;
+  border-bottom: 1px solid #BDBDBD;
+  background-color: #27aa99;
+  color: #e2e2e2;
+  font-size: 25px;
+  width: 100%;
+}
+
+.container .content #txt_FS::placeholder {
+  color: #bababa;
+}
+
+.container .content #generatebutton {
+  margin-top: 2px;
+  font-family: 'Quicksand';
+  border: none;
+  background-color: #59D4D9;
+  color: #ECEFF1;
+  font-size: 25px;
+  width: 370%;
+  border-radius: 5px;
+  margin: 0;
+  margin-right: 2px;
+}
+
+.container .content #generatebutton:hover {
+  background-color: #32A8AD;
+}
+
+.container .content #generatebutton:active {
+  background-color: #fff;
+  color: #32A8AD;
+}
+
+.container .content #copybutton {
+  margin-top: 2px;
+  font-family: 'Quicksand';
+  border: none;
+  background-color: #F44336;
+  color: #ECEFF1;
+  font-size: 25px;
+  width: 370%;
+  border-radius: 5px;
+  margin: 0;
+  margin-right: 2px;
+}
+
+.container .content #copybutton:hover {
+  background-color: #ad3631;
+}
+
+.container .content #copybutton:active {
+  background-color: #fff;
+  color: #F44336;
+}
